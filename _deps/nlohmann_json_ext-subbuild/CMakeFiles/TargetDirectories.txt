@@ -1,0 +1,3 @@
+/workspace/mcpelauncher-manifest/_deps/nlohmann_json_ext-subbuild/CMakeFiles/nlohmann_json_ext-populate.dir
+/workspace/mcpelauncher-manifest/_deps/nlohmann_json_ext-subbuild/CMakeFiles/edit_cache.dir
+/workspace/mcpelauncher-manifest/_deps/nlohmann_json_ext-subbuild/CMakeFiles/rebuild_cache.dir
