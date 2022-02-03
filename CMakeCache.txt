@@ -20,6 +20,9 @@ BUILD_CLIENT:BOOL=ON
 //Build tests for cll-telemetry (requires GTest)
 BUILD_TESTING:BOOL=OFF
 
+//Build webview for xboxlive login
+BUILD_WEBVIEW:BOOL=ON
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -281,6 +284,18 @@ GAMEWINDOW_SYSTEM:STRING=EGLUT
 //Path to a program.
 GIT_EXEC:FILEPATH=/usr/bin/git
 
+JNIVM_ENABLE_RETURN_NON_ZERO:BOOL=ON
+
+JNIVM_FAKE_JNI_MINECRAFT_LINUX_COMPAT:BOOL=ON
+
+//if off it uses fake-jni + baron or it uses jnivm instead as jni
+// interface
+JNI_USE_JNIVM:BOOL=ON
+
+//Additional paths in which the MSA daemon should be looked in.
+// Relative to the application directory.
+MSA_DAEMON_PATH:BOOL=OFF
+
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
 
@@ -453,7 +468,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=23
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
